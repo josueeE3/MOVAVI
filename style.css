@@ -1,0 +1,7 @@
+.navbar-brand[href="#1"] {
+    color: blue; /* Cambiar el color de la fuente a azul */
+}
+
+.navbar-brand[href="#1"]:hover {
+    color: blue; /* Mantener el color azul al pasar el mouse sobre el enlace */
+}

@@ -1,55 +1,140 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../css/styleReservas.css">
-</head>
-<body>
-    <div class="container"><header>
-Reservaciones
-    </header>
-    <div class="from-outer">
-        <from action="#">
-            <div class="page">
-                <div class="title">
-                    Informacion basica:</div>
-                    <div class="field">
-                        <div class="label">Nombre</div>
-                        <input type="text">
-                    </div>
-                </div>
-                <div class="field">
-                    <div class="label">Apellido</div>
-                    <input type="text">
-                </div>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Multi Step Form | CodingNepal</title>
+      <link rel="stylesheet" href="../css/styleReservas.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+   </head>
+   <body>
+      <div class="container">
+         <header>Reservas</header>
+         <div class="progress-bar">
+            <div class="step">
+               <p>
+                  Nombre
+               </p>
+               <div class="bullet">
+                  <span>1</span>
+               </div>
+               <div class="check fas fa-check"></div>
             </div>
-            <div class="field">
-                <button>Siguiente</button>
+            <div class="step">
+               <p>
+                  Contacto
+               </p>
+               <div class="bullet">
+                  <span>2</span>
+               </div>
+               <div class="check fas fa-check"></div>
             </div>
-        </div>
-
-        <div class="page">
-            <div class="title">
-                Informacion de contacto:</div>
-                <div class="field">
-                    <div class="label">Correo electronico</div>
-                    <input type="text">
-                </div>
+            <div class="step">
+               <p>
+                  Fechas 
+               </p>
+               <div class="bullet">
+                  <span>3</span>
+               </div>
+               <div class="check fas fa-check"></div>
             </div>
-            <div class="field">
-                <div class="label">Apellido</div>
-                <input type="text">
+            <div class="step">
+               <p>
+                 Enviar
+               </p>
+               <div class="bullet">
+                  <span>4</span>
+               </div>
+               <div class="check fas fa-check"></div>
             </div>
-        </div>
-        <div class="field">
-            <button>Siguiente</button>
-        </div>
-    </div>
-    
-        </from>
-    </div>
-</div>
-</body>
+         </div>
+         <div class="form-outer">
+            <form action="#">
+               <div class="page slide-page">
+                  <div class="title">
+                     Informacion basica:
+                  </div>
+                  <div class="field">
+                     <div class="label">
+                      Nombres
+                     </div>
+                     <input type="text">
+                  </div>
+                  <div class="field">
+                     <div class="label">
+                   Apellidos
+                     </div>
+                     <input type="text">
+                  </div>
+                  <div class="field">
+                     <button class="firstNext next">siguiente</button>
+                  </div>
+               </div>
+               <div class="page">
+                  <div class="title">
+                     Contacto
+                  </div>
+                  <div class="field">
+                     <div class="label">
+                       Correo electronico
+                     </div>
+                     <input type="text">
+                  </div>
+                  <div class="field">
+                     <div class="label">
+                       Numero de telefono
+                     </div>
+                     <input type="Number">
+                  </div>
+                  <div class="field btns">
+                     <button class="prev-1 prev">atras</button>
+                     <button class="next-1 next">siguiente</button>
+                  </div>
+               </div>
+               <div class="page">
+                  <div class="title">
+                    Fechas
+                  </div>
+                  <div class="field">
+                     <div class="label">
+                     Fecha del evento
+                     </div>
+                     <input type="text">
+                  </div>
+                  <div class="field">
+                     <div class="label">
+                        hora
+                     </div>
+                     <input type="text">
+                  </div>
+                  <div class="field btns">
+                     <button class="prev-2 prev">atras</button>
+                     <button class="next-2 next">Siguiente</button>
+                  </div>
+               </div>
+               <div class="page">
+                  <div class="title">
+                     lugar y detalles
+                  </div>
+                  <div class="field">
+                     <div class="label">
+                       lugar
+                     </div>
+                     <input type="text">
+                  </div>
+                  <div class="field">
+                     <div class="label">
+                       Detalles del evento
+                     </div>
+                     <input type="password">
+                  </div>
+                  <div class="field btns">
+                     <button class="prev-3 prev">atras</button>
+                     <button class="submit">guardar</button>
+                  </div>
+               </div>
+            </form>
+         </div>
+      </div>
+      <script src="script.js"></script>
+   </body>
 </html>

@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camvi</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <link rel="icon" href="../img/logo.jpeg">
+
+    
+    <style>
+        .mission-vision-container {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .mission-vision-card {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .mission-vision-card:hover {
+            background-color: #fff3dc;
+            color: #000;
+        }
+
+        .mission-vision-icon {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .mission-vision-card p {
+            text-align: center;
+        }
+
+        .mission-vision-card:hover {
+            animation: breathe 3.0s infinite;
+        }
+
+        @keyframes breathe {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+        }
+
+
+                /* Estilo para las flechas del carrusel */
+                .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            background-color: #000; /* Fondo negro */
+            color: #fff; /* Texto blanco */
+            border-radius: 50%; /* Bordes redondeados */
+        }
+
+        /* Cambio de color al pasar el ratón sobre las flechas */
+        .carousel-control-prev:hover,
+        .carousel-control-next:hover {
+            background-color: #555; /* Cambiar el color al pasar el ratón */
+        }
+
+        /* Estilo para las imágenes del carrusel */
+        .carousel-inner img {
+            width: 80px; /* Ancho de la imagen */
+            height: 80px; /* Altura de la imagen */
+            border-radius: 50%; /* Bordes redondeados */
+            object-fit: cover; /* Ajuste del contenido de la imagen */
+        }
+
+        /* Nuevos estilos para las tarjetas */
+        .reviews-container {
+            position: relative;
+            overflow: hidden;
+            filter: blur(8px); /* Desenfoque inicial */
+            transition: filter 0.3s ease-in-out; /* Transición de desenfoque */
+        }
+
+        .reviews-container.active {
+            filter: blur(0); /* Sin desenfoque cuando estén activas */
+        }
+
+        .review-card {
+            width: 300px;
+            margin: auto;
+            text-align: center;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out; /* Transición de movimiento */
+        }
+
+        
+
+    </style>
+
+</head> 
+<body>
+    
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <img src="../img/logo.jpeg" alt="" width="200px" height="100px" class="mr-auto" style="margin-right: 300px;">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="container-fluid justify-content-center">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="navbar-brand" href="../index.html" style="margin-right: 80px;">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navbar-brand" href="#" style="margin-right: 80px;">Galeria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navbar-brand" href="about us.html" style="margin-right: 80px;">Sobre nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navbar-brand" href="#" style="margin-right: 300px;">Reserva</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navbar-brand" href="#1"><u>Iniciar sesión </u></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-lg-6">
+                <h2 style="justify-content: center;">Nuestra Historia</h2>
+                <p>Con CAMVI, te sumergiras en un viaje fascinante a través de los hitos que han forjado la identidad y el éxito de este innovador editor de videos. 
+                    Desde sus modestos inicios hasta convertirse en un referente de la industria, CAMVI ha experimentado una evolución inspiradora.
+                     La narrativa captura la visión pionera de los fundadores, los desafíos superados y los momentos que definieron la trayectoria de la empresa. </p>
+
+                <br>
+                
+            </div>
+            <div class="col-lg-6">
+                <img src="../img/logo.jpeg" alt="Historia" class="img-fluid mb-3" width="500">
+            </div>
+        </div>
+    </div>
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-lg-6">
+                <img src="../img/caracteristicas.png" alt="Caracteristicas" class="img-fluid mb-3" width="500">
+            </div>
+                
+                <div class="col-lg-6">
+
+    <br>
+    <br>
+    <br>
+
+                <h2>Características de la Empresa</h2>
+                <ul>
+                    <li>Compromiso con la calidad</li>
+                    <li>Innovación constante</li>
+                    <li>Servicio al cliente excepcional</li>
+                    <li>Mejor calidad de edición mundial</li>
+                    <li>Uso de inteligencia artificial</li>
+                </ul>
+                    
+                
+            </div>
+        </div>
+
+    </div>
+
+    
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+    
+    <div class="container mt-4">
+        <div class="row mission-vision-container">
+            <div class="col-lg-6">
+                <div class="mission-vision-card">
+                    <div class="mission-vision-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h2 class="text-center">Misión</h2>
+                    <p>Proporcionar soluciones innovadoras que satisfagan las necesidades de nuestros clientes, superando sus expectativas y contribuyendo al desarrollo sostenible de la sociedad.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="mission-vision-card">
+                    <div class="mission-vision-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h2 class="text-center">Visión</h2>
+                    <p>Ser líderes en nuestro sector, reconocidos por nuestra excelencia en productos y servicios, y ser un referente en responsabilidad social y sostenibilidad que siga manteniendo las mismas bases desde el comienzo.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div class="container mt-4">
+        <h2 class="text-center">Ubicación</h2>
+        <div class="row">
+            <div class="col-lg-6">
+                <img src="ubicacion.jpg" alt="Ubicación" class="img-fluid mb-3" width="500">
+            </div>
+            <div class="col-lg-6">
+                <p>Estamos ubicados en un lugar estratégico que te permite acceder fácilmente a nuestros servicios. Visítanos y descubre lo que tenemos para ofrecerte.</p>
+                <p>Dirección: Calle Principal, Ciudad, País</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    
+
+    <div class="container mt-4">
+        <h2 class="text-center">Reseñas de Clientes</h2>
+        <div class="reviews-container">
+            <!-- Primera reseña -->
+            <div class="review-card active">
+                <img src="imagen1.jpg" alt="Cliente 1" class="img-fluid mb-3 rounded-circle" width="80">
+                <h4>Nombre del Cliente 1</h4>
+                <p>"Texto de la reseña del Cliente 1."</p>
+            </div>
+
+            <!-- Segunda reseña -->
+            <div class="review-card">
+                <img src="imagen2.jpg" alt="Cliente 2" class="img-fluid mb-3 rounded-circle" width="80">
+                <h4>Nombre del Cliente 2</h4>
+                <p>"Texto de la reseña del Cliente 2."</p>
+            </div>
+
+            <!-- Tercera reseña -->
+            <div class="review-card">
+                <img src="imagen3.jpg" alt="Cliente 3" class="img-fluid mb-3 rounded-circle" width="80">
+                <h4>Nombre del Cliente 3</h4>
+                <p>"Texto de la reseña del Cliente 3."</p>
+            </div>
+        </div>
+        
+        <!-- Botones para cambiar entre reseñas -->
+        <div class="text-center mt-3">
+            <button class="btn btn-primary" onclick="changeReview(-1)">Anterior</button>
+            <button class="btn btn-primary" onclick="changeReview(1)">Siguiente</button>
+        </div>
+    </div>
+
+
+
+
+
+      
+      <div class="container">
+        <footer class="py-3 my-4">
+          <ul class="nav justify-content-center border-bottom pb-3 mb-3 nav flex-column">
+            <li class="nav-item"><p class="text-center">Josue Rodrigo Hernandez Jovel</p></li>
+            <li class="nav-item"><p class="text-center">Kevin Fernando Portillo Avelar</p></li>
+            <li class="nav-item"><p class="text-center">Jaime Ernesto Perla Romero</p></li>
+            <li class="nav-item"><p class="text-center">Christian Alessandro Marín Sandoval</p></li> 
+            <li class="nav-item"><p class="text-center">Rodolfo Antonio Pérez Hernández</p></li> 
+          </ul>
+          <p class="text-center text-body-secondary">© 2024 CAMVI, Inc.</p>
+        </footer>
+      </div>
+
+
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+
+    <script>
+        let currentReview = 0;
+        const reviews = document.querySelectorAll('.review-card');
+        const container = document.querySelector('.reviews-container');
+
+        function changeReview(direction) {
+            currentReview += direction;
+
+            // Ciclo para mostrar la primera reseña después de la última y viceversa
+            if (currentReview < 0) {
+                currentReview = reviews.length - 1;
+            } else if (currentReview >= reviews.length) {
+                currentReview = 0;
+            }
+
+            // Actualiza las clases para aplicar el desenfoque y la transición
+            container.classList.remove('active');
+            setTimeout(() => {
+                reviews.forEach((review, index) => {
+                    review.style.transform = `translateX(${(index - currentReview) * 100}%)`;
+                });
+                container.classList.add('active');
+            }, 300); // Espera 300ms para que se complete la transición de desenfoque
+        }
+    </script>
+
+
+</body>
+
+</html>

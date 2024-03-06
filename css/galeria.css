@@ -28,3 +28,18 @@
         margin-bottom: 10px; 
     }
 }
+
+.container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  @media (min-width: 768px) {
+    .container-fluid {
+      max-width: 2500px;
+    }
+  }
+
+ 

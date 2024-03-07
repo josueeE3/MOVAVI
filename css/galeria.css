@@ -1,3 +1,9 @@
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .navbar-brand[href="#1"] {
     color: blue; 
 }
@@ -38,7 +44,7 @@
 
   @media (min-width: 768px) {
     .container-fluid {
-      max-width: 2500px;
+      max-width: 3000px;
     }
   }
 

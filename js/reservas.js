@@ -1,7 +1,7 @@
 
 <<<<<<< HEAD
 =======
-$('#btn').click(function(){
+$('btn').click(function(){
     const swalWithBootstrapButtons = Swal.mixin({
         customClass: {
           confirmButton: "btn btn-success",

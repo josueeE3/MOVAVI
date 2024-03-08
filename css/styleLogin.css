@@ -4,9 +4,7 @@ body{
     padding: 0;
     font-family: 'Poppins', sans-serif;
     height: 100vh;
-    background: #FFEFBA;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #FFFFFF, #FFEFBA);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   background-image: url('file:///C:/Users/rdlfp/Downloads/Fondo%20de%20pantalla%20Aesthetic%20Delicado%20con%20Frase%20en%20Beige/2.png');
 
 }
 
@@ -82,12 +80,12 @@ font-size: 12px;
 .username input:focus ~ span::before{
     width: 100%;
 }
-.recordar{
+.recordar {
     margin: -5px 0 20px 5px;
     color: blue;
     cursor: pointer;
 }
-.recordar :hover{
+.recordar  :hover{
     text-decoration: underline;
 }
 input[type="submit"]{
@@ -117,4 +115,21 @@ transition: .5s;
 }
 .registrarse a:hover{
     text-decoration: underlines;
+}
+button{
+    font-family:'roboto';
+    background: #adadad;
+    color: white;
+    border: 1px solid;
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    height: 40px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 25px;
+}
+button:hover{
+    border-color: #000000;
+    transition: .5s;
 }

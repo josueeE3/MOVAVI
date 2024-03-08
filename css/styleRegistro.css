@@ -1,5 +1,5 @@
 body{
-   background-image: url(https://www.10wallpaper.com/wallpaper/1920x1080/1509/wooden_pier_towards-Photography_Wallpaper_1920x1080.jpg);
+   background-image: url('file:///C:/Users/rdlfp/Downloads/Fondo%20de%20pantalla%20Aesthetic%20Delicado%20con%20Frase%20en%20Beige/1.png');
     height: 100vh;
     font-family: 'Times New Roman', Times, serifs;
     
@@ -100,4 +100,8 @@ button:hover{
     Form{
         width: 80%;
     }
+}
+a{
+    color: white;
+    text-decoration: none;
 }

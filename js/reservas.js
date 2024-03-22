@@ -1,6 +1,4 @@
 
-<<<<<<< HEAD
-=======
 $('btn').click(function(){
     const swalWithBootstrapButtons = Swal.mixin({
         customClass: {
@@ -39,4 +37,3 @@ $('btn').click(function(){
     })
     
    
->>>>>>> jaime
